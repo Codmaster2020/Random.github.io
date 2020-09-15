@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Randomayzer imges</title>
+</head>
+<body>
+<script type="text/javascript">
+var theImages = new Array() 
+theImages[0] = 'https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80'
+theImages[1] = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg'
+theImages[2] = 'https://static.toiimg.com/thumb/72975551.cms?width=680&height=512&imgsize=881753'
+theImages[3] = 'https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg'
+theImages[4] = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTapQRM3B352HNk3Vr4gq3fjzncCWr2xHxbzQ&usqp=CAU'
+theImages[5] = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQdjtNI4RfbhUaxP18dO9NnhOhsVph6jXILA&usqp=CAU'
+
+var j = 0
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+  preBuffer[i] = new Image()
+  preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+showImage();
+</script>
+<div id="splash">
+<img class="pic" src="images/splash1.jpg" alt="" />
+</div>
+</body>
+</html>
